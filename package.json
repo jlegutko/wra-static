@@ -1,0 +1,11 @@
+{
+  "name": "wra-static",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jlegutko/wra-static",
+  "author": "mciszczon <contact@mciszczon.pl>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

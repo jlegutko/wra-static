@@ -1,0 +1,23 @@
+// Colors
+$color-grey: #666666;
+$color-grey-light: lighten($color-grey, 25%);
+$color-grey-lighter: lighten($color-grey, 50%);
+$color-grey-lightest: lighten($color-grey, 57%);
+
+$color-white: #FFFFFF;
+
+$color-red: #FF0000;
+$color-red-dark: darken($color-red, 20%);
+
+$color-link: $color-red-dark;
+$color-link-hover: $color-red;
+
+// Spacing
+$spacing: 1rem;
+$spacing-sm: $spacing / 2;
+$spacing-lg: $spacing * 2;
+
+// Fonts
+$font-family: 'Roboto';
+$font-weight-regular: 400;
+$font-weight-bold: 700;

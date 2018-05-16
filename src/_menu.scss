@@ -1,0 +1,19 @@
+.menu {
+  display: flex;
+
+  &__item {
+    display: block;
+    margin: 0 $spacing-sm;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    color: $color-link;
+    &:hover,
+    &--active {
+      color: $color-link-hover;
+    }
+  }
+}
