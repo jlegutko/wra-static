@@ -6,7 +6,7 @@ html {
   box-sizing: inherit;
   width: 100%;
   min-height: 100%;
-  background-color: $color-grey-lightest;
+  background-color: $color-grey-light-57;
   font-family: $font-family, sans-serif;
 }
 
@@ -14,6 +14,12 @@ ul, ol {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .visuallyhidden {

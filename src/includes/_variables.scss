@@ -1,23 +1,44 @@
 // Colors
 $color-grey: #666666;
-$color-grey-light: lighten($color-grey, 25%);
-$color-grey-lighter: lighten($color-grey, 50%);
-$color-grey-lightest: lighten($color-grey, 57%);
-
-$color-white: #FFFFFF;
+$color-grey-dark: #3a3a39;
+$color-grey-light-20: lighten($color-grey, 20%);
+$color-grey-light-25: lighten($color-grey, 25%);
+$color-grey-light-50: lighten($color-grey, 50%);
+$color-grey-light-57: lighten($color-grey, 57%);
+$color-grey-light-60: lighten($color-grey, 60%);
 
 $color-red: #FF0000;
 $color-red-dark: darken($color-red, 20%);
 
-$color-link: $color-red-dark;
-$color-link-hover: $color-red;
+$transparent: transparent;
+
+$color-link: $color-grey-dark;
+$color-link-hover: $color-grey-light-20;
+$color-link-border: $color-grey-light-50;
+
+// Breakpoints
+$breakpoints: (
+	xs: 320px,
+	sm: 560px,
+	md: 768px,
+	lg: 1000px,
+	xl: 1280px,
+	xxl: 1440px
+);
 
 // Spacing
 $spacing: 1rem;
 $spacing-sm: $spacing / 2;
-$spacing-lg: $spacing * 2;
+$spacing-lg: $spacing * 1.5;
 
 // Fonts
-$font-family: 'Roboto';
+$font-family: 'Open Sans Condensed', sans-serif;
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
+$font-size: 1rem;
+$font-size-sm: $font-size * 0.85;
+$font-size-lg: $font-size * 1.25;
+
+// Other
+$transition: all 0.2s; 

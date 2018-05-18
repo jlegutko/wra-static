@@ -1,8 +1,16 @@
 .logo {
   display: flex;
   align-items: center;
+  opacity: 0.7;
+  transition: $transition;
 
   &__title {
     @extend .visuallyhidden;
+  }
+  &__image{
+  	height: 5rem;
+  }
+  &:hover {
+  	opacity: 1;
   }
 }

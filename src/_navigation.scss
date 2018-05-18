@@ -1,8 +1,15 @@
 .navigation {
   display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
-  padding-left: $spacing;
-  padding-right: $spacing;
+  width: 100%;
+  margin-left: auto;
+  order: 99;
+  flex-direction: column;
+  margin-bottom: $spacing;
+
+  @include respond-to(lg)  {
+  	  @include unvisuallyhidden;
+      flex-direction: row;
+      margin-right: auto;
+      order: 0;
+  }
 }

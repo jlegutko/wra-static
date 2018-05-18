@@ -12,12 +12,16 @@
 <body>
 
   <header class="navbar">
-    <div class="logo">
+    <a class="logo" href="">
       <h1 class="logo__title">White Red Art</h1>
-      <img class="logo__image" src="http://placehold.it/80x40" alt="">
-    </div>
-    <nav class="navigation">
-      <ul class="menu">
+      <img class="logo__image" src="assets/images/logo.svg" alt="logo">
+    </a>
+    <button class="navbar__button">
+        <span class="icon-menu" aria-hidden="true"></span>
+        <span class="visuallyhidden">Menu</span>
+    </button>
+    <nav class="navigation"> 
+      <ul class="menu menu--primary">
         <li class="menu__item">
           <a href="#" class="menu__link">Historia</a>
         </li>
@@ -28,24 +32,21 @@
           <a href="#" class="menu__link">O serwisie</a>
         </li>
       </ul>
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="" class="menu__link">
-            <img class="menu__icon" src="http://placehold.it/16x16" alt="">
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="" class="menu__link">
-            <img class="menu__icon" src="http://placehold.it/16x16" alt="">
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="" class="menu__link">
-            <img class="menu__icon" src="http://placehold.it/16x16" alt="">
-          </a>
-        </li>
-      </ul>
-    </nav>
+     </nav> 
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="" class="menu__link menu__link--icon" title="Profil">
+          <span class="icon-user" aria-hidden="true"></span>
+          <span class="visuallyhidden">Profil</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="menu__link menu__link--icon" title="Profil">
+          <span class="icon-log-out" aria-hidden="true"></span>
+          <span class="visuallyhidden">Wyloguj się</span>
+        </a>
+      </li>
+    </ul>
   </header>
 
 </body>
