@@ -1,0 +1,158 @@
+.description{
+  display: block;
+  padding: $spacing;
+  margin: $spacing*0.7;
+  margin-left: $spacing*3;
+  margin-top: $spacing*3;
+  background-color: rgba(200, 190, 190, 0.85);
+  color: black;
+
+  &__title{
+    position: relative;
+    font-size: $font-size*0.75;
+    font-weight: $font-weight-bold;
+    margin-bottom: 1rem;
+    &::after {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      display: block;
+      width: 20%;
+      height: 0.15rem;
+      background: $color-red-dark;
+      content: none;
+    }
+  }
+
+  &:hover{
+    background-color: rgba(210, 200, 200, 0.9);
+  }
+
+  &__content{
+    font-size: $font-size*0.6;
+  }
+
+  &--icon{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    font-size: $font-size*1.2;
+    color: $color-red-darker;
+  }
+}
+
+@include respond-to(sm) {
+  .description{
+    padding: $spacing;
+    margin: $spacing*0.7;
+    margin-left: $spacing*1.5;
+    margin-top: $spacing*4;
+
+    &__title{
+      font-size: $font-size*1.2;
+      margin-bottom: 2.5rem;
+      &::after {
+        top: 3rem;
+        left: 0;
+        width: 20%;
+        height: 0.16rem;
+        content: "";
+      }
+    }
+
+    &__content{
+      font-size: $font-size*0.85;
+    }
+
+    &--icon{
+        font-size: $font-size*1.5;
+
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .description{
+    padding: $spacing*2;
+    margin: $spacing*0.7;
+    margin-left: $spacing*4;
+
+    &__title{
+      font-size: $font-size*1.5;
+      margin-bottom: 3rem;
+      &::after {
+        top: 3.5rem;
+        left: 0;
+        width: 20%;
+        height: 0.2rem;
+        content: "";
+      }
+    }
+
+    &__content{
+      font-size: $font-size*0.95;
+    }
+
+    &--icon{
+        font-size: $font-size*1.5;
+
+    }
+  }
+}
+
+@include respond-to(xl) {
+  .description{
+    padding: $spacing*2;
+    margin: $spacing*0.7;
+
+    &__title{
+      font-size: $font-size*1.5;
+      margin-bottom: 3rem;
+      &::after {
+        top: 3.5rem;
+        left: 0;
+        width: 20%;
+        height: 0.2rem;
+        content: "";
+      }
+    }
+
+    &__content{
+      font-size: $font-size*0.95;
+    }
+
+    &--icon{
+        font-size: $font-size*1.5;
+
+    }
+  }
+}
+
+@include respond-to(xxl) {
+  .description{
+    padding: $spacing*2;
+    margin: $spacing*0.7;
+    margin-right: $spacing*4;
+
+    &__title{
+      font-size: $font-size*1.5;
+      margin-bottom: 3rem;
+      &::after {
+        top: 3.5rem;
+        left: 0;
+        width: 20%;
+        height: 0.2rem;
+        content: "";
+      }
+    }
+
+    &__content{
+      font-size: $font-size*0.95;
+    }
+
+    &--icon{
+        font-size: $font-size*1.7;
+
+    }
+  }
+}

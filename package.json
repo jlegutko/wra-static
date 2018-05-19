@@ -6,6 +6,9 @@
   "author": "mciszczon <contact@mciszczon.pl>",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "scrollreveal": "^3.4.0",
+    "scrollspy-js": "^0.1.3",
+    "smooth-scroll": "^14.2.0"
   }
 }

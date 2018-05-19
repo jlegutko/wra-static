@@ -1,0 +1,47 @@
+.footer{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $spacing;
+  background-color: $color-grey-light-60;
+  font-size: $font-size*0.7;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: $spacing 0;
+
+    &::after {
+      display: block;
+      width: 1px;
+      height: 2rem;
+      margin: 0 $spacing;
+      background: $color-red-dark;
+      content: '';
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+
+    &--year{
+      white-space: nowrap;
+      font-weight: $font-weight-bold;
+    }
+
+    &--informations{
+    }
+
+    &--link{
+      font-weight: $font-weight-bolder;
+      text-transform: uppercase;
+      color: $color-red-dark;
+    }
+  }
+
+  &__icon {
+    color: currentColor;
+  }
+}

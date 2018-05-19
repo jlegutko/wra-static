@@ -1,0 +1,1 @@
+../../node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js

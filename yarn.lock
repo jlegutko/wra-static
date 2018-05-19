@@ -5,3 +5,15 @@
 normalize.css@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
+
+scrollreveal@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-3.4.0.tgz#77ce77b383d1883f2aafebdfc6f17a105718a780"
+
+scrollspy-js@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/scrollspy-js/-/scrollspy-js-0.1.3.tgz#a8556c78d7c8035a30220c4b2087c2daa9efbb2a"
+
+smooth-scroll@^14.2.0:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/smooth-scroll/-/smooth-scroll-14.2.0.tgz#87a224fc32c8956995e5bb014a5e1a07b8361e21"

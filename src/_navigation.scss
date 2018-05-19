@@ -1,15 +1,54 @@
+.no-js .navigation {
+  max-height: 100%;
+
+  .menu .menu__item {
+    opacity: 1;
+  }
+
+}
+
 .navigation {
   display: flex;
+  max-height: 0;
+  overflow: hidden;
   width: 100%;
   margin-left: auto;
   order: 99;
-  flex-direction: column;
-  margin-bottom: $spacing;
+  transition: max-height 0.2s linear;
+
+  .menu {
+    margin-bottom: $spacing-lg;
+  }
+
+  .menu .menu__item {
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
+
+  &--open {
+    transition: max-height 0.3s linear;
+    max-height: 300px;
+
+    .menu .menu__item {
+      transition: opacity 0.2s 0.1s linear;
+      opacity: 1;
+    }
+  }
 
   @include respond-to(lg)  {
   	  @include unvisuallyhidden;
+      display: flex;
       flex-direction: row;
       margin-right: auto;
       order: 0;
+      max-height: 100%;
+
+      .menu {
+        margin-bottom: 0;
+      }
+
+      .menu .menu__item {
+        opacity: 1;
+      }
   }
 }

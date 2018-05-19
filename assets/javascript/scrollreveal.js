@@ -1,0 +1,1 @@
+../../node_modules/scrollreveal/dist/scrollreveal.js
