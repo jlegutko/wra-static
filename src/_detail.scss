@@ -1,0 +1,47 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background: $color-grey-light-50;
+  align-items: center;
+
+
+
+  @include respond-to(md) {
+    flex-direction: row;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  &__item {
+    @include respond-to(md) {
+      flex-basis: 30%;
+
+    }
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__description {
+    @include respond-to(md) {
+      flex-basis: 70%;
+
+    }
+  }
+  &__text{
+    padding-left: 2rem;
+    font-size: $font-size*0.9;
+    text-align: center;
+  }
+
+}
+
+.detail:nth-child(odd) .detail__item {
+  @include respond-to(md) {
+    order: 2;
+  }
+}

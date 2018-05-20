@@ -15,7 +15,10 @@
   	border: none;
   	background: none;
   	align-self: center;
-  	font-size: $font-size-lg * 1.5;
+  	font-size: $font-size-lg;
+    @include respond-to(md) {
+      font-size: $font-size-lg * 1.3;
+    }
 
   	&:hover,
     &:focus {

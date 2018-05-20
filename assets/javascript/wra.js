@@ -76,3 +76,16 @@ var spy = new ScrollSpy('#main', {
   nav: '.years__link',
   className: 'years__link--active'
 });
+
+// Lightcase
+jQuery(document).ready(function($) {
+  $('a[data-rel^=lightcase], .artwork__link, .detail__link').lightcase({
+    transition: 'fade',
+    showTitle: true,
+    showCaption: true,
+    maxWidth: 1920,
+    maxHeight: 1280,
+    overlayOpacity: 0.99,
+    overlayBackground: '#ff0000'
+  });
+});

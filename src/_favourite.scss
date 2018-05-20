@@ -1,0 +1,32 @@
+.favourite {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem 2rem 0;
+
+  &__entry {
+    padding-right: 2rem;
+
+  }
+  &__add {
+
+  }
+  &__item {
+    display: none;
+    &::after {
+      position: absolute;
+      margin: 5px;
+    	content:"";
+    }
+
+
+  }
+  &__label {
+    color: $color-grey-light-30;
+    &:hover{
+      color: red;
+    }
+  }
+  &__icon {
+    font-size: 2.5rem;
+  }
+}

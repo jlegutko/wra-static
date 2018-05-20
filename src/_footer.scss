@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 $spacing;
@@ -19,7 +20,7 @@
       height: 2rem;
       margin: 0 $spacing;
       background: $color-red-dark;
-      content: '';
+      content: none;
     }
 
     &:last-child::after {
@@ -32,6 +33,7 @@
     }
 
     &--informations{
+      text-align: center;
     }
 
     &--link{
@@ -43,5 +45,20 @@
 
   &__icon {
     color: currentColor;
+  }
+
+  @include respond-to(xxl){
+    flex-flow: row;
+
+    &__item {
+
+      &::after {
+        content: '';
+      }
+
+      &--informations{
+        text-align: left;
+      }
+    }
   }
 }

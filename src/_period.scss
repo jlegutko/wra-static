@@ -1,0 +1,55 @@
+.period {
+  padding: 1rem 2rem;
+
+  &__description{
+    display: block;
+  }
+
+  &__title {
+    font-weight: $font-weight-regular;
+    font-size: $font-size*1.1;
+
+    &::after {
+      display: block;
+      margin-top: 1rem;
+      width: 15%;
+      height: 2px;
+      background: $color-red-light;
+      content: "";
+    }
+  }
+
+  &__details {
+    font-size: $font-size*0.8;
+    padding: 0 2rem;
+  }
+}
+
+@include respond-to(md) {
+  .period {
+    padding: 2rem 3rem;
+
+    &__title {
+      font-weight: $font-weight-regular;
+      font-size: $font-size*1.4;
+    }
+    &__details {
+      font-size: $font-size*0.9;
+      padding: 0 2rem;
+    }
+  }
+}
+@include respond-to(lg) {
+  .period {
+    padding: 3rem 4rem;
+
+    &__title {
+      font-weight: $font-weight-regular;
+      font-size: $font-size*1.8;
+    }
+    &__details {
+      font-size: $font-size;
+      padding: 0 2rem;
+    }
+  }
+}

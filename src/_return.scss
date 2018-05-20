@@ -1,0 +1,19 @@
+.return {
+  padding-left: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+
+  &__link{
+    color: $color-red-darker;
+  }
+  &__icon{
+    font-size: $font-size*0.85;
+  }
+  &__item{
+    font-size: $font-size*0.85;
+    font-weight: $font-weight-bolder;
+    text-transform: uppercase;
+  }
+}

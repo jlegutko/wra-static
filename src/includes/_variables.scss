@@ -12,6 +12,7 @@ $color-red-dark: #740000;
 
 $color-red: #FF0000;
 $color-red-darker: darken($color-red-dark, 5%);
+$color-red-light: lighten($color-red-dark, 15%);
 
 $transparent: transparent;
 
@@ -46,3 +47,37 @@ $font-size-lg: $font-size * 1.25;
 
 // Other
 $transition: all 0.1s;
+$slow-transition: all 0.5s;
+
+// Lightcase
+$lightcase-custom: (
+	'font-path': '../assets/lightcase-icons/',
+);
+
+// $lightcase-default: (
+//   'font-path': '../assets/lightcase-icons/', // Path relative to the compiled css file
+//
+//   'breakpoint': 641px,
+//
+//   'overlay-color': #333,
+//
+//   'case-background': #fff,
+//   'case-background-media': #333,
+//
+//   'icon-font-size': 38px,
+//   'icon-color': rgba(255, 255, 255, 0.6),
+//   'icon-color-hover': rgba(255, 255, 255, 1),
+//
+//   'title-font-size': 17px,
+//   'title-color': #aaa,
+//
+//   'caption-font-size': 13px,
+//   'caption-color': #aaa,
+//
+//   'sequenceInfo-font-size': 11px,
+//   'sequenceInfo-color': #aaa,
+//
+//   'text-shadow': 0 0 10px rgba(0, 0, 0, 0.5),
+//   'text-color-viewport-small': #aaa,
+//   'text-color-viewport-large': #333
+// );

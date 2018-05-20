@@ -9,8 +9,10 @@
 @import 'includes/normalize';
 @import 'includes/base';
 @import 'includes/icomoon';
+@import 'includes/lightcase';
 
 // Components
+@import 'return';
 @import 'navbar';
 @import 'logo';
 @import 'navigation';
@@ -21,3 +23,14 @@
 @import 'years';
 @import 'description';
 @import 'footer';
+@import 'period';
+@import 'gallery';
+@import 'nav';
+@import 'artwork';
+@import 'rating';
+@import 'favourite';
+@import 'informations';
+@import 'details';
+@import 'detail';
+@import 'comments';
+@import 'container';

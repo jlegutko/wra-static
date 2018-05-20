@@ -1,0 +1,65 @@
+.rating {
+  padding: 2rem 3rem 2rem 0;
+
+  &__add {
+    width: 55%;
+    vertical-align: middle;
+  }
+  &__entry {
+    display: inline-block;
+    padding-top: 0.2rem;
+  }
+  &__scale {
+
+  }
+  &__item {
+    display: none;
+
+    &::after {
+      position: absolute;
+      margin: 5px;
+    	content:"";
+    }
+  }
+  &__label {
+    color: #ddd;
+    display: block;
+    float: right;
+    font-size: 1.75rem;
+
+  }
+  &__button {
+    display: block;
+    float:right;
+  }
+  &__average {
+    padding-top: 1rem;
+    display: flex;
+    align-items:center;
+    flex-basis: 100%;
+  }
+  &__title {
+    padding-right: 1rem;
+  }
+  &__number {
+
+  }
+  &__icon {
+    color: gold;
+    font-size: 1.5rem;
+  }
+}
+
+/*Gold stars*/
+.rating__add > input:checked ~ label, /* show gold star when clicked */
+.rating__add:not(:checked) > label:hover, /* hover current star */
+.rating__add:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+} /* hover previous stars in list */
+
+.rating__add > input:checked + label:hover, /* hover current star when changing rating */
+.rating__add > input:checked ~ label:hover,
+.rating__add > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating__add > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}

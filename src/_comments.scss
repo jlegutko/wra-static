@@ -1,0 +1,59 @@
+.comments {
+  padding-left: 5rem;
+
+  &__header {
+    display: block;
+    text-transform: uppercase;
+    font-size: $font-size*1.5;
+    padding-bottom: 1rem;
+  }
+
+  &__add {
+    display: flex;
+    background: $color-grey-light-50;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    width: 65%;
+    padding: 0.75rem;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__content{
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    color: #777777;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 20px;
+    width: 100%;
+    resize:vertical;
+    outline:none;
+    border: 1px solid #F2F2F2;
+  }
+  &__button {
+    margin-top: 0.5rem;
+    float:right;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  &__icon{
+    padding-right: 0.5rem;
+  }
+}
