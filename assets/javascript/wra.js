@@ -77,6 +77,7 @@ var spy = new ScrollSpy('#main', {
   className: 'years__link--active'
 });
 
+
 // Lightcase
 jQuery(document).ready(function($) {
   $('a[data-rel^=lightcase], .artwork__link, .detail__link').lightcase({

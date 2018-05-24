@@ -26,12 +26,17 @@
   &__text{
     font-size: 16px;
     position: relative;
-    width: 60%;
+    width: 100%;
     margin-left:1rem;
+    margin-right: 1rem;
     padding: 0.75rem;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
     background: #fff;
+
+    @include respond-to(md) {
+      width: 60%;
+    }
     &::before{
       content: "";
       position: absolute;

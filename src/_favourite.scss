@@ -1,7 +1,10 @@
 .favourite {
   display: flex;
   align-items: center;
-  padding: 0 3rem 2rem 0;
+
+  @include respond-to(lg) {
+    padding: 0 3rem 2rem 0;
+  }
 
   &__entry {
     padding-right: 2rem;

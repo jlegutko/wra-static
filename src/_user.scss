@@ -1,0 +1,26 @@
+.user {
+  margin: 4rem 3rem;
+  background: $color-gold-light;
+
+  &__item {
+    padding: 0.75rem 1.5rem;
+    display: block;
+
+    &:hover {
+      background: $color-gold;
+    }
+  }
+  &__link {
+    color: $color-grey-dark;
+    font-size: $font-size;
+    text-transform: uppercase;
+
+    &--active {
+      background: $color-gold;
+    }
+  }
+  &__icon {
+    font-size: $font-size;
+    padding-right: 0.5rem;
+  }
+}

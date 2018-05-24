@@ -1,0 +1,33 @@
+.content {
+  flex-basis: 70%;
+  margin: 4rem 3rem 4rem 5rem;
+  padding: 0.75rem 2rem;
+  background: $color-grey-light-50;
+
+  &__profile {
+
+  }
+  &__header {
+    display: block;
+    padding-left: 2rem;
+    font-size: $font-size*1.3;
+    font-weight: $font-weight-regular;
+    text-transform: uppercase;
+    color: $color-grey-dark;
+
+    &::after {
+      display: block;
+      margin-top: 1rem;
+      width: 90%;
+      height: 1px;
+      background: $color-grey-light-20;
+      content: "";
+    }
+  }
+  &__favourite {
+
+  }
+  &__rating {
+    margin-bottom: 2rem;
+  }
+}

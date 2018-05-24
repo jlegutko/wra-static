@@ -1,0 +1,40 @@
+.favourites {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  &__column {
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  &__item {
+    margin-top: 8px;
+    vertical-align: middle;
+    &--lg {
+      flex-basis: 30%;
+    }
+    &--md {
+      flex-basis: 20%;
+    }
+    &--sm {
+      flex-basis: 10%;
+    }
+    &--full {
+      flex-basis: 40%;
+
+    }
+  }
+  &__icon {
+    position: absolute;
+    color: red;
+    font-size: $font-size;
+    margin-top: 0.5rem;
+    margin-left: 16rem;
+  }
+  &__image {
+    display: block;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

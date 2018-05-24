@@ -1,18 +1,15 @@
 .detail {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
   background: $color-grey-light-50;
   align-items: center;
-
-
+  margin-left: auto;
+  margin-right: auto;
 
   @include respond-to(md) {
     flex-direction: row;
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-
   }
 
   &__item {
@@ -27,15 +24,20 @@
     object-fit: cover;
   }
   &__description {
+
     @include respond-to(md) {
       flex-basis: 70%;
 
     }
   }
   &__text{
-    padding-left: 2rem;
-    font-size: $font-size*0.9;
+    font-size: $font-size*0.75;
     text-align: center;
+    padding: 1rem;
+
+    @include respond-to(lg){
+      font-size: $font-size*0.9;
+    }
   }
 
 }

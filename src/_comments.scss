@@ -1,11 +1,20 @@
 .comments {
-  padding-left: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include respond-to(md) {
+    padding-left: 5rem;
+  }
 
   &__header {
     display: block;
     text-transform: uppercase;
-    font-size: $font-size*1.5;
+    font-size: $font-size*1.2;
     padding-bottom: 1rem;
+
+    @include respond-to(md) {
+      font-size: $font-size*1.5;
+    }
   }
 
   &__add {
@@ -16,8 +25,12 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
-    width: 65%;
+    width: 100%;
     padding: 0.75rem;
+
+    @include respond-to(md) {
+      width: 65%;
+    }
   }
   &__form {
     width: 100%;
@@ -47,11 +60,16 @@
     border-radius: 4px;
     text-transform: uppercase;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
+
+    @include respond-to(md) {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
   }
   &__icon{
     padding-right: 0.5rem;
