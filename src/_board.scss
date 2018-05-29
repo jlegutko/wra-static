@@ -1,4 +1,9 @@
 .board {
   display: flex;
   width: 100%;
+  flex-direction: column;
+
+  @include respond-to(lg) {
+    flex-direction: row;
+  }
 }

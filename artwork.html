@@ -74,8 +74,11 @@
 
 
         <div class="rating">
+          <div class="rating__average">
+            <p class="rating__title">Średnia ocena użytkowników:</p>
+            <p class="rating__number"><span class="rating__icon">★</span> 5.7</p>
+          </div>
          <div class="rating__add">
-          <span class="rating__entry">Dodaj ocenę:</span
           <form class="rating__scale" action="#">
             <input class="rating__item" type="radio" id="grade_1" name="grade" value="1" />
               <label class = "rating__label" for="grade_1" title="1 gwiadka">
@@ -97,21 +100,19 @@
             <label class = "rating__label" for="grade_5" title="5 gwiazdek">
               <span class="icon-star icon-star rating__star"></span>
             </label>
-            <button class="rating__button" type="submit">Oceń</button>
+            <div class="rating__button">
+              <button class="profile__button profile__button--save" type="submit">Oceń</button>
+            </div>
           </form>
         </div>
-          <div class="rating__average">
-            <p class="rating__title">Średnia ocena:</p>
-            <p class="rating__number"><span class="rating__icon">★</span> 5.7</p>
-          </div>
-        </div>
+      </div>
 
         <div class="favourite">
-          <span class="favourite__entry">Dodaj do ulubionych</span>
+          <span class="favourite__entry">Dodaj obraz do ulubionych</span>
           <form class="favourite__add" action="#">
             <input class="favourite__item" type="submit" id="favouriteElement" name="favourite" value="1" />
             <label class = "favourite__label" for="favouriteElement" title="Add to favourites">
-              <span class="favourite__icon">❤</span>
+              <span class="favourite__icon icon-heart"></span>
             </label>
           </form>
         </div>
@@ -184,7 +185,7 @@
     </section>
 
   </main>
-<h3 class="content__header">Profil</h3>  
+
   <footer class="footer">
     <span class="footer__item footer__item--year">Legutko &copy; 2018 </span>
     <span class="footer__item footer__item--informations">Autorem niniejszego serwisu jest Jadwiga Legutko. Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP na Wydziale Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego. Autor nie jest odpowiedzialny za publikowane na stronie komentarze.</span>

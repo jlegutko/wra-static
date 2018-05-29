@@ -1,28 +1,53 @@
 .content {
-  flex-basis: 70%;
-  margin: 4rem 3rem 4rem 5rem;
+  flex-basis: 100%;
+  margin: 1rem;
   padding: 0.75rem 2rem;
   background: $color-grey-light-50;
+
+  @include respond-to(lg) {
+    flex-basis: 70%;
+    margin: 5rem 3rem 4rem 5rem;
+  }
 
   &__profile {
 
   }
   &__header {
-    display: block;
+    width: 100%;
     padding-left: 2rem;
-    font-size: $font-size*1.3;
+    font-size: $font-size;
     font-weight: $font-weight-regular;
     text-transform: uppercase;
     color: $color-grey-dark;
+    display: flex;
+
+  }
+  &__entry {
+    font-weight: $font-weight-regular;
+    font-size: $font-size*1.3;
+    flex-basis: 60%;
 
     &::after {
-      display: block;
+      display: flex;
       margin-top: 1rem;
-      width: 90%;
+      width: 160%;
       height: 1px;
       background: $color-grey-light-20;
       content: "";
     }
+  }
+  &__options {
+    display: flex;
+    margin-top: 2.25rem;
+  }
+  &__item {
+
+  }
+  &__icon {
+
+  }
+  &__link {
+
   }
   &__favourite {
 

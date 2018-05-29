@@ -1,3 +1,11 @@
 .panel {
   flex-basis: 20%;
+
+  &__menu {
+    position: static;
+
+    @include respond-to(lg) {
+      position: fixed;
+    }
+  }
 }

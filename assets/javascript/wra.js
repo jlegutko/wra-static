@@ -71,11 +71,6 @@ var scroll = new SmoothScroll(
   }
 );
 
-// Scroll Spy
-var spy = new ScrollSpy('#main', {
-  nav: '.years__link',
-  className: 'years__link--active'
-});
 
 
 // Lightcase
@@ -89,4 +84,17 @@ jQuery(document).ready(function($) {
     overlayOpacity: 0.99,
     overlayBackground: '#ff0000'
   });
+  // Scroll Spy
+  if ($('body').hasClass('page-home')) {
+    var spy = new ScrollSpy('#main', {
+      nav: '.years__link',
+      className: 'years__link--active'
+    });
+  };
+  if ($('body').hasClass('page-profile')) {
+    var spy = new ScrollSpy('#main', {
+      nav: '.user__link',
+      className: 'user__link--active'
+    });
+  }
 });

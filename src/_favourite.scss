@@ -1,14 +1,24 @@
 .favourite {
+  padding: 1rem 2rem 1rem 1rem;
+  width: 100%;
   display: flex;
   align-items: center;
+  background-color: $color-red-lighter;
 
-  @include respond-to(lg) {
-    padding: 0 3rem 2rem 0;
+  @include respond-to(xxl) {
+    padding: 2rem 3rem 2rem 2rem;
+    width: 55%;
   }
 
   &__entry {
-    padding-right: 2rem;
+    text-transform: uppercase;
+    font-size: $font-size*0.7;
+    padding-right: 2.5rem;
 
+    @include respond-to(xxl) {
+      font-size: $font-size*0.9;
+      padding-right: 3.5rem;
+    }
   }
   &__add {
 
@@ -25,11 +35,12 @@
   }
   &__label {
     color: $color-grey-light-30;
+    cursor: pointer;
     &:hover{
       color: red;
     }
   }
   &__icon {
-    font-size: 2.5rem;
+    font-size: $font-size*1.6;
   }
 }

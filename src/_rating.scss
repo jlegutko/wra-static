@@ -1,9 +1,18 @@
 .rating {
-  padding: 2rem 3rem 2rem 0;
+  padding: 0 3rem 2rem 2rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: $color-gold-light;
 
-  &__add {
+  @include respond-to(xxl) {
     width: 55%;
-    vertical-align: middle;
+  }
+  &__add {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   &__entry {
     display: inline-block;
@@ -22,44 +31,63 @@
     }
   }
   &__label {
-    color: #ddd;
-    display: block;
-    float: right;
-    font-size: 1.75rem;
+    color: $color-grey-light-30;
+    font-size: $font-size*1.3;
+    float:right;
+    cursor: pointer;
 
+    @include respond-to(xxl) {
+      font-size: $font-size*1.5;
+    }
   }
   &__button {
-    display: block;
-    float:right;
+    clear:both;
+    padding-top: 1.5rem;
   }
   &__average {
-    padding-top: 1rem;
     display: flex;
-    align-items:center;
-    flex-basis: 100%;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin-bottom: 2.5rem;
   }
   &__title {
-    padding-right: 1rem;
+    text-transform: uppercase;
+    font-size: $font-size*0.7;
+
+    @include respond-to(xxl) {
+      font-size: $font-size*0.9;
+    }
   }
   &__number {
+    font-size: $font-size*1.5;
+    font-weight: $font-weight-bolder;
+    margin: 0;
+    padding: 0;
 
+    @include respond-to(lg) {
+      font-size: $font-size*2;
+    }
   }
   &__icon {
     color: gold;
-    font-size: 1.5rem;
+    font-size: $font-size*1.5;
+
+    @include respond-to(lg) {
+      font-size: $font-size*2;
+    }
   }
 }
 
 /*Gold stars*/
-.rating__add > input:checked ~ label, /* show gold star when clicked */
-.rating__add:not(:checked) > label:hover, /* hover current star */
-.rating__add:not(:checked) > label:hover ~ label {
+.rating__scale > input:checked ~ label, /* show gold star when clicked */
+.rating__scale:not(:checked) > label:hover, /* hover current star */
+.rating__scale:not(:checked) > label:hover ~ label {
   color: #FFD700;
 } /* hover previous stars in list */
 
-.rating__add > input:checked + label:hover, /* hover current star when changing rating */
-.rating__add > input:checked ~ label:hover,
-.rating__add > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating__add > input:checked ~ label:hover ~ label {
+.rating__scale > input:checked + label:hover, /* hover current star when changing rating */
+.rating__scale > input:checked ~ label:hover,
+.rating__scale > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating__scale > input:checked ~ label:hover ~ label {
   color: #FFED85;
 }
