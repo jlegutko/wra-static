@@ -14,19 +14,19 @@
 		margin: 0;
 
 		&--2018 {
-			background-image: url(../assets/images/background_img_1.jpg);
+			background: linear-gradient(lighten($color-red-gradient, 55%), lighten($color-red-gradient, 45%))
 		}
 
-		&--2010 {
-			background-image: url(../assets/images/background_img_2.jpg);
+		&--2015 {
+			background: linear-gradient(lighten($color-red-gradient, 45%), lighten($color-red-gradient, 30%))
 		}
 
-		&--2000 {
-			background-image: url(../assets/images/background_img_3.jpg);
+		&--2012 {
+			background: linear-gradient(lighten($color-red-gradient, 30%), lighten($color-red-gradient, 10%))
 		}
 
-		&--1990 {
-			background-image: url(../assets/images/background_img_4.jpg);
+		&--2011 {
+			background: linear-gradient(lighten($color-red-gradient, 10%), $color-red-gradient)
 		}
 	}
 

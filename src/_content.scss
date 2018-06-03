@@ -25,12 +25,12 @@
   &__entry {
     font-weight: $font-weight-regular;
     font-size: $font-size*1.3;
-    flex-basis: 60%;
+    flex-basis: 55%;
 
     &::after {
       display: flex;
       margin-top: 1rem;
-      width: 160%;
+      width: 175%;
       height: 1px;
       background: $color-grey-light-20;
       content: "";
@@ -38,16 +38,33 @@
   }
   &__options {
     display: flex;
-    margin-top: 2.25rem;
+    margin-top: 2.3rem;
   }
   &__item {
+    display: flex;
 
+    &::after {
+      margin-left: 1rem;
+      display: block;
+      width: 2px;
+      height: 1.75rem;
+      margin: 0 $spacing;
+      background: $color-red-dark;
+      content: "";
+    }
+    &:last-child::after {
+      content: none;
+    }
   }
   &__icon {
-
+    padding-right: 0.5rem;
   }
   &__link {
+    color: $color-grey-dark;
 
+    &:hover {
+      color: $color-red-dark;
+    }
   }
   &__favourite {
 

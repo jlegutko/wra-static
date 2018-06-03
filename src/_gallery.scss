@@ -5,13 +5,14 @@
   align-content: center;
 
   &__item {
-    width: 99%;
-    height: 99%;
+    height: 15rem;
     padding: 1%;
+    margin-bottom: 2rem;
   }
   &__link {
     position: relative;
     display: block;
+    height: 100%;
     &:hover {
       .gallery__description {
         opacity: 1;
@@ -21,6 +22,7 @@
   &__img {
     display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   &__description {
@@ -62,8 +64,8 @@
   @include respond-to(lg) {
 
     &__item {
-      width: 24%;
-      height: 24%;
+      height: 15rem;
+      width: 25%;
       padding: 1%;
     }
   }

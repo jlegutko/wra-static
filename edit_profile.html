@@ -51,74 +51,52 @@
   </header>
 
   <main class="main" role="main" id="user">
-    <section class="board">
-
-      <nav class="panel">
-        <ul class="user">
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-edit" aria-hidden="true"></span>
-              Edytuj profil</li>
-          </a>
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-lock" aria-hidden="true"></span>
-              Zmień hasło</li>
-          </a>
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-user-x" aria-hidden="true"></span>
-              Usuń konto</li>
-          </a>
-        </ul>
-      </nav>
-
-      <section class="content">
-        <div class="content__profile">
-          <h3 class="content__header" id="profile">Edytuj profil</h3>
-
-          <form method="post" class="profile" action="#">
-            <div class="profile__header">
-              <label for="login" class="visuallyhidden">Login</label>
-              <span class="profile__icon profile__icon--bg icon-user" aria-hidden="true"></span>
-              <input class="profile__username profile__username--input" type="text" id="login" name="login" placeholder="jlegutko">
+    <section class="center">
+      <div class="center__container">
+          <div class="content__profile">
+            <div class="content__header">
+              <h3 class="content__entry">Edytuj profil</h3>
             </div>
-            <div class="profile__informations">
-              <label for="name" class="profile__item profile__item--label">Imię</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-user"></span>
-                <input class="profile__data profile__data--input" type="text" id="name" name="name" placeholder="Jadwiga">
+            <form method="post" class="profile" action="#">
+              <div class="profile__header profile__header--input">
+                <label for="login" class="visuallyhidden">Login</label>
+                <span class="profile__icon profile__icon--bg icon-user" aria-hidden="true"></span>
+                <input class="profile__data profile__data--input" type="text" id="login" name="login" placeholder="jlegutko">
               </div>
+              <div class="profile__informations profile__informations--input">
+                <label for="name" class="profile__item profile__item--label">Imię</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-user"></span>
+                  <input class="profile__data profile__data--input" type="text" id="name" name="name" placeholder="Jadwiga">
+                </div>
 
-              <label for="lastname" class="profile__item profile__item--label">Nazwisko</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-user"></span>
-                <input class="profile__data profile__data--input" type="text" id="lastname" name="lastname" placeholder="Legutko">
+                <label for="lastname" class="profile__item profile__item--label">Nazwisko</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-user"></span>
+                  <input class="profile__data profile__data--input" type="text" id="lastname" name="lastname" placeholder="Legutko">
+                </div>
+
+                <label for="email" class="profile__item profile__item--label">E-mail</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-mail"></span>
+                  <input class="profile__data profile__data--input" type="text" id="email" name="email" placeholder="jegutko3@example.com">
+                </div>
+
+                <label for="phone" class="profile__item profile__item--label">Telefon</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-phone"></span>
+                  <input class="profile__data profile__data--input" type="tel" id="phone" name="phone" placeholder="798-112-760">
+                </div>
               </div>
-
-              <label for="email" class="profile__item profile__item--label">E-mail</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-mail"></span>
-                <input class="profile__data profile__data--input" type="text" id="email" name="email" placeholder="jegutko3@example.com">
+              <div class="profile__buttons">
+                <a class="profile__button profile__button--return" href="index.html">
+                  <span class="icon-rotate-ccw profile__icon profile__icon--button"></span> Powrót</a>
+    			      <input class="profile__button profile__button--save" type="submit" value="Zapisz zmiany">
               </div>
-
-              <label for="phone" class="profile__item profile__item--label">Telefon</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-phone"></span>
-                <input class="profile__data profile__data--input" type="tel" id="phone" name="phone" placeholder="798-112-760">
-              </div>
-            </div>
-            <div class="profile__buttons">
-              <a class="profile__button profile__button--return" href="index.html">
-                <span class="icon-rotate-ccw"></span> Powrót</a>
-  			      <input class="profile__save profile__button--save" type="submit" value="Zapisz zmiany">
-            </div>
-          </form>
-
+            </form>
+          </div>
         </div>
       </section>
-
-    </section>
   </main>
 
   <footer class="footer">

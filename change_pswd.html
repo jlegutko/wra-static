@@ -50,70 +50,50 @@
     </ul>
   </header>
 
-  <main class="main" role="main" id="user">
-    <section class="board">
+  <main class="main" role="main">
 
-      <nav class="panel">
-        <ul class="user">
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-edit" aria-hidden="true"></span>
-              Edytuj profil</li>
-          </a>
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-lock" aria-hidden="true"></span>
-              Zmień hasło</li>
-          </a>
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-user-x" aria-hidden="true"></span>
-              Usuń konto</li>
-          </a>
-        </ul>
-      </nav>
-
-      <section class="content">
-        <div class="content__profile">
-          <h3 class="content__header" id="profile">Zmień hasło</h3>
-          <div class="profile profile--form">
-            <div class="profile__header">
-              <span class="profile__icon profile__icon--bg icon-user" aria-hidden="true"></span>
-              <p class="profile__username">jlegutko</p>
+      <section class="center">
+        <div class="center__container">
+          <div class="content__profile">
+            <div class="content__header">
+              <h3 class="content__entry">Zmień hasło</h3>
             </div>
+            <div class="profile profile--form">
+              <div class="profile__header">
+                <span class="profile__icon profile__icon--bg icon-user" aria-hidden="true"></span>
+                <p class="profile__username">jlegutko</p>
+              </div>
+            </div>
+
+            <form method="post" class="profile" action="#">
+              <div class="profile__informations profile__informations--input">
+                <label for="name" class="profile__item profile__item--label">Stare hasło</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-lock"></span>
+                  <input class="profile__data profile__data--input" type="password" id="name" name="name" placeholder="">
+                </div>
+
+                <label for="lastname" class="profile__item profile__item--label">Nowe hasło</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-lock"></span>
+                  <input class="profile__data profile__data--input" type="password" id="lastname" name="lastname" placeholder="">
+                </div>
+
+                <label for="email" class="profile__item profile__item--label">Powtórz hasło</label>
+                <div class="profile__area profile__area--form">
+                  <span class="profile__icon profile__icon--sm icon-lock"></span>
+                  <input class="profile__data profile__data--input" type="password" id="email" name="email" placeholder="">
+                </div>
+              </div>
+              <div class="profile__buttons">
+                <a class="profile__button profile__button--return" href="index.html">
+                  <span class="icon-rotate-ccw profile__icon profile__icon--button"></span> Powrót</a>
+                <input class="profile__button profile__button--save" type="submit" value="Zapisz zmiany">
+              </div>
+            </form>
           </div>
-
-          <form method="post" class="profile" action="#">
-            <div class="profile__informations">
-              <label for="name" class="profile__item profile__item--label">Stare hasło</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-lock"></span>
-                <input class="profile__data profile__data--input" type="password" id="name" name="name" placeholder="">
-              </div>
-
-              <label for="lastname" class="profile__item profile__item--label">Nowe hasło</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-lock"></span>
-                <input class="profile__data profile__data--input" type="password" id="lastname" name="lastname" placeholder="">
-              </div>
-
-              <label for="email" class="profile__item profile__item--label">Powtórz hasło</label>
-              <div class="profile__area profile__area--form">
-                <span class="profile__icon profile__icon--sm icon-lock"></span>
-                <input class="profile__data profile__data--input" type="password" id="email" name="email" placeholder="">
-              </div>
-            </div>
-            <div class="profile__buttons">
-              <a class="profile__button profile__button--return" href="index.html">
-                <span class="icon-rotate-ccw"></span> Powrót</a>
-  			      <input class="profile__save profile__button--save" type="submit" value="Potwierdź">
-            </div>
-          </form>
-
         </div>
       </section>
-
-    </section>
   </main>
 
   <footer class="footer">

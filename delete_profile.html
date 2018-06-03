@@ -50,32 +50,14 @@
     </ul>
   </header>
 
-  <main class="main" role="main" id="user">
-    <section class="board">
+  <main class="main" role="main">
 
-      <nav class="panel">
-        <ul class="user">
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-edit" aria-hidden="true"></span>
-              Edytuj profil</li>
-          </a>
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-lock" aria-hidden="true"></span>
-              Zmień hasło</li>
-          </a>
-          <a href="#" class="user__link">
-            <li class="user__item user__item">
-              <span class="user__icon icon-user-x" aria-hidden="true"></span>
-              Usuń konto</li>
-          </a>
-        </ul>
-      </nav>
-
-      <section class="content">
+    <section class="center">
+      <div class="center__container">
         <div class="content__profile">
-          <h3 class="content__header" id="profile">Usuń konto</h3>
+          <div class="content__header">
+            <h3 class="content__entry">Usuń konto</h3>
+          </div>
           <div class="profile profile--form">
             <div class="profile__header">
               <span class="profile__icon profile__icon--bg icon-user" aria-hidden="true"></span>
@@ -86,14 +68,14 @@
           <form method="post" class="profile" action="#">
             <div class="profile__buttons">
               <a class="profile__button profile__button--information" href="index.html">
-                <span class="icon-rotate-ccw"></span> Powrót</a>
-    			      <input class="profile__button profile__button--return" type="submit" value="Usuń">
+                <span class="icon-rotate-ccw profile__icon profile__icon--button"></span> Powrót</a>
+    			      <input class="profile__button" type="submit" value="Usuń">
             </div>
           </form>
         </div>
-      </section>
-
+      </div>
     </section>
+
   </main>
 
   <footer class="footer">

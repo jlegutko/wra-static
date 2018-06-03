@@ -31,7 +31,7 @@
 		padding-left: $spacing-lg*1.1;
 		font-size: $font-size-lg;
 		font-weight: $font-weight-light;
-		color: $color-grey-light-30;
+		color: $color-grey-dark;
 
 		@include respond-to(lg) {
 			display: inline-block;
@@ -39,13 +39,12 @@
 			border-bottom: 1px solid currentColor;
 			font-size: $font-size-lg*1.25;
 			font-weight: $font-weight-light;
-			color: $color-grey-light-30;
 		}
 
 		&:hover,
 		&--active {
 			font-weight: $font-weight-bold;
-			color: $color-grey-light-57;
+			color: $color-grey;
 
 			.years__date {
 				transform: scale(1.2);
@@ -53,7 +52,6 @@
 
 			@include respond-to(lg) {
 				font-weight: $font-weight-bold;
-				color: $color-grey-light-57;
 
 				.years__date {
 						transform: scale(1.3);

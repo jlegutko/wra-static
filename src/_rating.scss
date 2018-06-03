@@ -70,9 +70,12 @@
   }
   &__icon {
     color: gold;
-    font-size: $font-size*1.5;
 
-    @include respond-to(lg) {
+    &--sm {
+      font-size: $font-size*1.1;
+      padding-left: 0.5rem;
+    }
+    &--lg {
       font-size: $font-size*2;
     }
   }

@@ -15,19 +15,19 @@
     color: $color-red-darker;
   }
   &__icon{
-    font-size: $font-size*0.85;
+    font-size: $font-size*0.7;
 
     @include respond-to(lg) {
-      font-size: $font-size*0.7;
+      font-size: $font-size*0.85;
     }
   }
   &__item{
-    font-size: $font-size*0.85;
+    font-size: $font-size*0.7;
     font-weight: $font-weight-bolder;
     text-transform: uppercase;
 
     @include respond-to(lg) {
-      font-size: $font-size*0.7;
+      font-size: $font-size*0.85;
     }
   }
 }

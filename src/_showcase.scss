@@ -31,12 +31,22 @@
     		}
 
     	}
-
-    	&__img {
+      &__img {
     		width: 100%;
     		height: 260px;
     		object-fit: cover;
         box-shadow: 0 3px 5px 0 black;
   	  }
+      &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(90%);
+        transition: $slow-transition;
+
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
     }
   }

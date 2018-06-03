@@ -14,6 +14,11 @@
   &__header {
     display: flex;
     margin-bottom: 1rem;
+    flex-basis: 40%;
+
+    &--input {
+      width: 40%;
+    }
   }
   &__area {
     display:flex;
@@ -29,6 +34,7 @@
     padding-right: 1rem;
     color: $color-grey-light-20;
     margin: 0;
+
     &--bg {
       font-size: $font-size*1.5;
     }
@@ -36,6 +42,11 @@
       padding:0.75rem;
       font-size: $font-size*1.2;
       background: $color-grey-light-30;
+    }
+    &--button {
+      color: white;
+      font-size: $font-size*0.7;
+      padding-right: 0.3rem;
     }
   }
   &__username {
@@ -66,6 +77,9 @@
 
     &--form {
       width: 50%;
+    }
+    &--input {
+      width: 40%;
     }
 
   }
@@ -104,6 +118,8 @@
     }
   }
   &__button {
+    display: flex;
+    align-items: center;
     flex-basis: 20%;
     padding: 0 1.5rem;
     height: 2rem;
@@ -114,6 +130,8 @@
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: $font-weight-bolder;
 
     @include respond-to(lg) {
       height: 2.5rem;
@@ -126,11 +144,9 @@
       color: white;
       background-color: #2fa21d;
       border-radius: 5px;
-      text-transform: uppercase;
-      font-weight: $font-weight-bolder;
     }
     &--return {
-
+      flex-basis: 25%;
     }
     &--information {
       background-color: $color-grey-light-20;
@@ -145,12 +161,14 @@
       color: $color-grey-light-50;
       font-size: $font-size*0.8;
     }
+
   }
   &__buttons {
     display: flex;
     margin-top: 5rem;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
+    margin-bottom: 2rem;
   }
   &__delete {
     display: block;

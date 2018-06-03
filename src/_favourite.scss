@@ -34,11 +34,23 @@
 
   }
   &__label {
-    color: $color-grey-light-30;
     cursor: pointer;
-    &:hover{
+
+    &--active {
       color: red;
+
+      &:hover{
+        color: $color-grey-light-30;
+      }
     }
+    &--disactive {
+      color: $color-grey-light-30;
+      
+      &:hover{
+        color: red;
+      }
+    }
+
   }
   &__icon {
     font-size: $font-size*1.6;

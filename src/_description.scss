@@ -4,8 +4,9 @@
   margin: $spacing*0.7;
   margin-left: $spacing*3;
   margin-top: $spacing*3;
-  background-color: rgba(200, 190, 190, 0.85);
+  background-color: rgba(230, 225, 225, 0.4);
   color: black;
+  transition: $slow-transition;
 
   &__title{
     position: relative;
@@ -25,7 +26,7 @@
   }
 
   &:hover{
-    background-color: rgba(210, 200, 200, 0.9);
+    background-color: rgba(240, 230, 230, 0.7);
   }
 
   &__content{
