@@ -1,3 +1,7 @@
+.js .description {
+  visibility: hidden;
+}
+
 .description{
   display: block;
   padding: $spacing;
@@ -6,7 +10,6 @@
   margin-top: $spacing*3;
   background-color: rgba(230, 225, 225, 0.4);
   color: black;
-  transition: $slow-transition;
 
   &__title{
     position: relative;

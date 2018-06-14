@@ -1,9 +1,10 @@
 .profile {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
+    align-items: center;
 
     @include respond-to(lg) {
-      align-items: center;
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
@@ -14,15 +15,28 @@
   &__header {
     display: flex;
     margin-bottom: 1rem;
-    flex-basis: 40%;
+    flex-basis: 100%;
+
+    @include respond-to(lg) {
+      flex-basis: 40%;
+    }
 
     &--input {
-      width: 40%;
+      width: 100%;
+
+      @include respond-to(lg) {
+        width: 40%;
+      }
     }
   }
   &__area {
     display:flex;
     background: $color-grey-light-40;
+    margin: 0;
+
+    @include respond-to(lg) {
+      margin: auto;
+    }
 
     &--form {
       background: none;
@@ -68,18 +82,26 @@
     font-size: $font-size*0.8;
     text-align: left;
     vertical-align: top;
-    width: 90%;
+    width: 100%;
 
-    @include respond-to(lg) {
-      width: 30%;
+    @include respond-to(md) {
+      width: 50%;
       font-size: $font-size*1.1;
     }
 
     &--form {
-      width: 50%;
+      width: 100%;
+
+      @include respond-to(lg) {
+        width: 50%;
+      }
     }
     &--input {
-      width: 40%;
+      width: 100%;
+
+      @include respond-to(lg) {
+        width: 40%;
+      }
     }
 
   }
@@ -93,6 +115,7 @@
     &--label {
       display: block;
       font-size: $font-size*0.9;
+      margin-left: 1rem;
     }
   }
   &__data {
@@ -104,10 +127,17 @@
       border: 1.3px solid $color-grey-light-30;
       color: $color-grey-dark;
       margin: 0;
-      width: 100%;
+      width: 70%;
       font-size: $font-size;
       outline: none;
       transition: $slow-transition;
+
+      @include respond-to(md) {
+        width: 85%;
+      }
+      @include respond-to(lg) {
+        width: 100%;
+      }
 
       &::placeholder {
         color: $color-grey-light-40;
@@ -120,10 +150,10 @@
   &__button {
     display: flex;
     align-items: center;
-    flex-basis: 20%;
-    padding: 0 1.5rem;
-    height: 2rem;
-    font-size: 16px;
+    flex-basis: 15%;
+    padding: 0.5rem 0.75rem;
+    height: 2.5rem;
+    font-size: 12px;
     border-style: none;
     background-color: #e22020;
     color: white;
@@ -133,20 +163,20 @@
     text-transform: uppercase;
     font-weight: $font-weight-bolder;
 
-    @include respond-to(lg) {
-      height: 2.5rem;
-      padding: 0 2rem;
+    @include respond-to(md) {
+      flex-basis: 20%;
+      height: 3rem;
+      padding: 0.75rem 2rem;
+      font-size: 16px;
     }
 
     &--save {
-      font-size: 16px;
       border-style: none;
       color: white;
       background-color: #2fa21d;
       border-radius: 5px;
     }
     &--return {
-      flex-basis: 25%;
     }
     &--information {
       background-color: $color-grey-light-20;
@@ -166,9 +196,13 @@
   &__buttons {
     display: flex;
     margin-top: 5rem;
-    width: 50%;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 2rem;
+
+    @include respond-to(xxl) {
+      width: 50%;
+    }
   }
   &__delete {
     display: block;

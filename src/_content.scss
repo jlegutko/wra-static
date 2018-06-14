@@ -14,34 +14,66 @@
   }
   &__header {
     width: 100%;
-    padding-left: 2rem;
+    padding-left: 0;
     font-size: $font-size;
     font-weight: $font-weight-regular;
     text-transform: uppercase;
     color: $color-grey-dark;
     display: flex;
+    flex-direction: column;
 
+    @include respond-to(xl) {
+      flex-direction: row;
+      padding-left: 2rem;
+    }
   }
   &__entry {
     font-weight: $font-weight-regular;
     font-size: $font-size*1.3;
-    flex-basis: 55%;
+    flex-basis: 100%;
+
+    @include respond-to(xl) {
+      flex-basis: 30%;
+    }
+    @include respond-to(xxl) {
+      flex-basis: 45%;
+    }
 
     &::after {
       display: flex;
       margin-top: 1rem;
-      width: 175%;
+      width: 90%;
       height: 1px;
       background: $color-grey-light-20;
       content: "";
+
+      @include respond-to(xl) {
+        width: 300%;
+      }
+      @include respond-to(xxl) {
+        width: 200%;
+      }
     }
   }
   &__options {
     display: flex;
-    margin-top: 2.3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    flex-direction: column;
+
+    @include respond-to(xl) {
+      flex-direction: row;
+      margin-top: 2.3rem;
+      margin-bottom: 0;
+    }
   }
   &__item {
     display: flex;
+    padding-bottom: 0.75rem;
+
+    @include respond-to(xl) {
+      padding-bottom: 0;
+    }
 
     &::after {
       margin-left: 1rem;
@@ -50,7 +82,10 @@
       height: 1.75rem;
       margin: 0 $spacing;
       background: $color-red-dark;
-      content: "";
+
+      @include respond-to(xl) {
+        content: "";
+      }
     }
     &:last-child::after {
       content: none;

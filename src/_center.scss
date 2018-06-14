@@ -2,16 +2,26 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 5rem 0;
+  flex-direction: column;
 
+  @include respond-to(lg) {
+    margin: 5rem 0;
+    flex-direction: row;
+  }
   &--profile {
     margin: 2rem 0;
   }
 
   &__container {
     align-self: center;
-    flex-basis: 50%;
+    flex-basis: 100%;
     background-color: $color-grey-light-50;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include respond-to(xl) {
+      flex-basis: 50%;
+    }
 
   }
 }

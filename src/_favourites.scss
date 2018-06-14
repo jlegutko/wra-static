@@ -1,9 +1,12 @@
 .favourites {
   padding: 1rem;
-  columns: 2;
+  columns: 1;
   column-fill: balance;
   column-gap: $spacing;
 
+  @include respond-to(md) {
+    columns: 2;
+  }
   @include respond-to(lg) {
     columns: 4;
   }

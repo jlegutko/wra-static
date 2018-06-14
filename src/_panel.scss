@@ -1,5 +1,9 @@
 .panel {
-  flex-basis: 20%;
+  flex-basis: 100%;
+
+  @include respond-to(lg) {
+    flex-basis: 20%;
+  }
 
   &__menu {
     position: static;

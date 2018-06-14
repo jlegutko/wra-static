@@ -4,6 +4,7 @@
   // padding: 0 3rem 3rem 1rem;
   text-align: left;
 
+
   &__title {
     flex-basis: 50%;
     margin-bottom: $spacing;
@@ -21,12 +22,18 @@
     flex-basis: 50%;
     flex-grow: 1;
     margin: 0 0 $spacing 0;
+    font-size: $font-size*0.7;
 
     @include respond-to(md) {
       flex-basis: 70%;
       flex-grow: 1;
       margin: 0 0 $spacing 0;
+      font-size: $font-size*0.8;
 
     }
   }
+}
+
+.informations__definition ol {
+  font-size: $font-size*0.7;
 }

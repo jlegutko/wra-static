@@ -14,19 +14,19 @@
 		margin: 0;
 
 		&--2018 {
-			background: linear-gradient(lighten($color-red-gradient, 55%), lighten($color-red-gradient, 45%))
+			background: linear-gradient(lighten($color-red-gradient, 55%), lighten($color-red-gradient, 50%))
 		}
 
 		&--2015 {
-			background: linear-gradient(lighten($color-red-gradient, 45%), lighten($color-red-gradient, 30%))
+			background: linear-gradient(lighten($color-red-gradient, 50%), lighten($color-red-gradient, 45%))
 		}
 
 		&--2012 {
-			background: linear-gradient(lighten($color-red-gradient, 30%), lighten($color-red-gradient, 10%))
+			background: linear-gradient(lighten($color-red-gradient, 45%), lighten($color-red-gradient, 15%))
 		}
 
 		&--2011 {
-			background: linear-gradient(lighten($color-red-gradient, 10%), $color-red-gradient)
+			background: linear-gradient(lighten($color-red-gradient, 15%), $color-red-gradient)
 		}
 	}
 
@@ -35,6 +35,7 @@
 		height: 100%;
 		flex-basis: 85%;
 		align-items: center;
+
   	}
 }
 

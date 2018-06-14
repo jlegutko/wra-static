@@ -1,14 +1,21 @@
 .user {
-  margin: 5rem;
+  margin: 1rem;
   background: $color-gold-light;
 
-  &__item {
-    padding: 1rem 4.5rem 1rem 1.5rem;
-    display: block;
+  @include respond-to(lg) {
+    margin-top: 5rem;
+  }
+  @include respond-to(xl) {
+    margin: 5rem;
+  }
 
+  &__item {
+    display: block;
   }
   &__link {
     display: block;
+    padding: 1rem 4.5rem 1rem 1.5rem;
+    width: 100%;
     color: $color-grey-dark;
     font-size: $font-size;
     text-transform: uppercase;

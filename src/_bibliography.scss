@@ -1,0 +1,74 @@
+.bibliography {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4rem;
+
+  @include respond-to(md) {
+    width: 55%;
+  }
+  &__italic {
+    font-style: italic;
+    display: inline;
+    margin: 0 !important;
+    padding: 0;
+  }
+  &__list {
+    font-size: $font-size*0.8;
+    padding-left: 1rem;
+
+    @include respond-to(md) {
+      font-size: $font-size;
+    }
+  }
+  &__element {
+    line-height: 1.25;
+    padding-bottom: 1.5rem;
+
+    @include respond-to(md) {
+      line-height: 1.5;
+    }
+  }
+  &__title {
+    font-weight: $font-weight-regular;
+    font-size: $font-size*1.4;
+
+    @include respond-to(md) {
+      font-size: $font-size*1.9;
+    }
+    &::after {
+      display: block;
+      margin-top: 1rem;
+      width: 10%;
+      height: 2px;
+      background: $color-red-light;
+      content: "";
+    }
+  }
+}
+
+.bibliography h3 {
+  font-size: $font-size;
+
+  @include respond-to(md) {
+    font-size: $font-size*1.2;
+  }
+}
+.bibliography h4 {
+  font-size: $font-size*0.8;
+  margin: 0;
+
+  @include respond-to(md) {
+    font-size: $font-size;
+  }
+}
+.bibliography p {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font-size: $font-size*0.8;
+
+  @include respond-to(md) {
+    font-size: $font-size;
+  }
+}

@@ -58,7 +58,7 @@ sr.reveal(
 sr.reveal(
   '.description',
   {
-    delay: 1100,
+    delay: 1100
   }
 );
 
