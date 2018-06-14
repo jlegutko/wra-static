@@ -94,10 +94,10 @@
     margin: 0;
     text-transform: uppercase;
     font-weight: $font-weight-regular;
-    font-size: $font-size*1.2;
+    font-size: $font-size*0.8;
   }
   &__details {
     margin: 0;
-    font-size: $font-size;
+    font-size: $font-size*0.8;
   }
 }

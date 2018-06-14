@@ -2055,7 +2055,14 @@ a[class*='lightcase-icon-'] {
         text-align: left; } }
 
 .period {
-  padding: 1rem 2rem; }
+  padding: 0.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 768px) {
+    .period {
+      width: 70%;
+      padding: 1rem 2rem; } }
   .period__description {
     display: block;
     padding-left: 0 2rem; }
@@ -2174,10 +2181,10 @@ a[class*='lightcase-icon-'] {
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.8rem; }
+    font-size: 1.2rem; }
   .gallery__details {
     margin: 0;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
 
 .nav {
   display: flex;
