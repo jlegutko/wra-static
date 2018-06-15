@@ -1,0 +1,10 @@
+.error {
+  color: red;
+  &__header {
+    text-transform: uppercase;
+    font-size: $font-size*1.1;
+  }
+  &__content {
+    font-size: $font-size*1.1;
+  }
+}

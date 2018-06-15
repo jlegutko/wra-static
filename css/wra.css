@@ -335,6 +335,9 @@ button:hover {
 a {
   text-decoration: none; }
 
+.error {
+  color: red; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../assets/icomoon/icomoon.eot?n0k0z0");
@@ -1809,7 +1812,11 @@ a[class*='lightcase-icon-'] {
     display: flex;
     height: 100%;
     flex-basis: 85%;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .year__info {
+        flex-direction: row; } }
 
 .no-js .year {
   transform: translateZ(0); }
@@ -2059,13 +2066,16 @@ a[class*='lightcase-icon-'] {
   width: 100%;
   margin-left: auto;
   margin-right: auto; }
-  @media (min-width: 768px) {
-    .period {
-      width: 70%;
-      padding: 1rem 2rem; } }
   .period__description {
     display: block;
-    padding-left: 0 2rem; }
+    padding-left: 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .period__description {
+        width: 70%;
+        padding: 1rem 2rem; } }
   .period__title {
     font-weight: 400;
     font-size: 1.65rem; }
@@ -2105,13 +2115,19 @@ a[class*='lightcase-icon-'] {
       font-size: 2.1rem;
       text-transform: uppercase; } }
 .period__details ol {
-  font-size: 1.35rem; }
+  font-size: 1.05rem; }
+  @media (min-width: 768px) {
+    .period__details ol {
+      font-size: 1.35rem; } }
 
 .gallery {
   display: flex;
   padding-top: 2rem;
   flex-wrap: wrap;
-  align-content: center; }
+  align-content: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
   .gallery__inspiration {
     position: absolute;
     height: 28%;
@@ -2129,15 +2145,16 @@ a[class*='lightcase-icon-'] {
     padding-left: 1rem; }
   .gallery__item {
     padding: 1%;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    height: 20rem; }
     @media (min-width: 768px) {
       .gallery__item {
         width: 49%;
-        height: 15rem;
+        height: 20rem;
         padding: 1%; } }
     @media (min-width: 1000px) {
       .gallery__item {
-        height: 15rem;
+        height: 20rem;
         width: 25%;
         padding: 1%; } }
     .gallery__item--inspiration {
@@ -2181,10 +2198,10 @@ a[class*='lightcase-icon-'] {
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.2rem; }
+    font-size: 1.35rem; }
   .gallery__details {
     margin: 0;
-    font-size: 1.2rem; }
+    font-size: 1.35rem; }
 
 .nav {
   display: flex;
@@ -3016,25 +3033,31 @@ a[class*='lightcase-icon-'] {
   margin-left: 1rem; }
 
 .identification {
+  margin-left: 3rem;
+  order: -1;
   align-self: start; }
+  @media (min-width: 768px) {
+    .identification {
+      margin-left: 0;
+      order: 5; } }
   .identification__name {
-    margin: 0;
+    margin: 3rem 0 0 0;
     color: #ffcfd3;
     text-transform: uppercase;
     font-size: 1.5rem;
-    text-align: left;
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: translate(0, 100%) rotate(90deg);
-    /* Safari 3-8 */
-    transform: translate(0, 100%) rotate(90deg);
-    white-space: nowrap;
-    width: 4.5rem; }
+    text-align: left; }
     @media (min-width: 768px) {
       .identification__name {
         font-size: 3.75rem;
         margin-right: 1rem;
-        margin-top: -5rem; } }
+        margin-top: -5rem;
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: translate(0, 100%) rotate(90deg);
+        /* Safari 3-8 */
+        transform: translate(0, 100%) rotate(90deg);
+        white-space: nowrap;
+        width: 4.5rem; } }
     @media (min-width: 1000px) {
       .identification__name {
         font-size: 4.5rem;
@@ -3124,5 +3147,13 @@ a[class*='lightcase-icon-'] {
     @media (min-width: 768px) {
       .form__container {
         flex-basis: 50%; } }
+
+.error {
+  color: red; }
+  .error__header {
+    text-transform: uppercase;
+    font-size: 1.65rem; }
+  .error__content {
+    font-size: 1.65rem; }
 
 /*# sourceMappingURL=wra.css.map */

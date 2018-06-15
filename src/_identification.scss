@@ -1,22 +1,29 @@
 .identification {
+  margin-left: 3rem;
+  order: -1;
   align-self: start;
 
+  @include respond-to(md) {
+    margin-left: 0;
+    order: 5;
+  }
+
   &__name {
-    margin: 0;
+    margin: 3rem 0 0 0;
     color: lighten($color-red-gradient, 45%);
     text-transform: uppercase;
     font-size: $font-size;
     text-align: left;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: translate(0, 100%) rotate(90deg); /* Safari 3-8 */
-    transform: translate(0, 100%) rotate(90deg);
-    white-space: nowrap;
-    width: $font-size*3;
 
     @include respond-to(md) {
       font-size: $font-size*2.5;
       margin-right: 1rem;
       margin-top: -5rem;
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: translate(0, 100%) rotate(90deg); /* Safari 3-8 */
+      transform: translate(0, 100%) rotate(90deg);
+      white-space: nowrap;
+      width: $font-size*3;
     }
     @include respond-to(lg) {
       font-size: $font-size*3;

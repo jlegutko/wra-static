@@ -3,6 +3,9 @@
   padding-top: 2rem;
   flex-wrap: wrap;
   align-content: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 
   &__inspiration {
     position: absolute;
@@ -26,14 +29,15 @@
   &__item {
     padding: 1%;
     margin-bottom: 2rem;
+    height: 20rem;
 
     @include respond-to(md) {
       width: 49%;
-      height: 15rem;
+      height: 20rem;
       padding: 1%;
     }
     @include respond-to(lg) {
-      height: 15rem;
+      height: 20rem;
       width: 25%;
       padding: 1%;
     }
@@ -94,10 +98,10 @@
     margin: 0;
     text-transform: uppercase;
     font-weight: $font-weight-regular;
-    font-size: $font-size*0.8;
+    font-size: $font-size*0.9;
   }
   &__details {
     margin: 0;
-    font-size: $font-size*0.8;
+    font-size: $font-size*0.9;
   }
 }

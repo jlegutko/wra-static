@@ -35,7 +35,8 @@ window.sr = ScrollReveal({
   duration: 1000,
   origin: 'bottom',
   scale: 1,
-  distance: '4rem'
+  distance: '4rem',
+  mobile: false
 });
 
 sr.reveal(
@@ -56,15 +57,12 @@ sr.reveal(
 );
 
 sr.reveal(
-  '.description',
-  {
-    delay: 1100
-  }
+  '.description'
 );
 
 // Smooth Scroll
 var scroll = new SmoothScroll(
-  'a[href*="#"]',
+  'a[href*="#"]:not([class*="lightcase"])',
   {
     speed: 1000,
     updateURL: false,
